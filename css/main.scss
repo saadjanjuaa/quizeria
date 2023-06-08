@@ -1,0 +1,20 @@
+@use "./base/meyers-reset";
+@use "./base/general";
+
+@use "./pages/index/welcome-page-wrapper";
+
+@use "./pages/info-page/filter-info-section";
+@use "./pages/info-page/continue-to-quiz-btn-container";
+@use "./pages/info-page/music-info-grid-container";
+@use "./pages/info-page/anime-info-grid-container";
+@use "./pages/info-page/header";
+
+@use "./pages/quiz-page/navigation-btns";
+@use "./pages/quiz-page/quiz-section";
+
+@use "./components/button";
+@use "./components/input";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');

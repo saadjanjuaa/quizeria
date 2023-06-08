@@ -1,0 +1,23 @@
+@import "../variables/colors";
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #9bbdff;
+}
+
+h2 {
+    font-size: 2.2rem;
+    opacity: 0;
+    font-family: "Poppins", sans-serif;
+
+    @media (min-width: 577px) /* Tablets */ {
+        font-size: 2.5rem;
+    }
+
+    @media (min-width: 971px) /* Desktop */ {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,88 @@
+
+.welcome-page-wrapper {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .welcome-section {
+    
+        &__heading {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            font-size: 2.3rem;
+            opacity: 0;
+        }
+
+        .btn-container {
+
+            display: flex;
+            
+            .continue-btn {
+                margin: 1rem;
+                opacity: 0;
+            }
+                
+            .start-new-btn {
+                margin: 1rem;
+                opacity: 0;
+            }
+        }
+    }
+
+    .new-or-continue-section {
+
+        .start-new-section {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+
+            .name-input {
+                margin: 1rem 0rem 1rem 0rem;
+            }
+        }
+
+        .continue-section {
+
+            text-align: center;
+            margin-top: 1rem;
+
+            &__heading {
+                padding: .5rem;
+            }
+
+            .existing-players-btn-container {
+                
+                margin-top: 1rem;
+
+            }
+            
+            .continue-btn-container {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    @media (min-width: 577px) /* Tablets */ {
+
+        &__heading {
+            font-size: 3rem;
+            opacity: 0;
+        } 
+    }
+
+    @media (min-width: 971px) /* Desktop */ {
+    
+        &__heading {
+            font-size: 4rem;
+            opacity: 0;
+        }
+    }
+}

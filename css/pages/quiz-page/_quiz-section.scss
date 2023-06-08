@@ -1,0 +1,81 @@
+@import "../../variables/colors";
+
+.quiz-section {
+
+    opacity: 0;
+    margin-bottom: 5rem;
+
+    .question-heading {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .current-points-heading {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .current-question-heading {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .quiz-btns-container {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        
+        .quit-btn {
+            display: none;
+        }
+    }
+
+    .answer-btns-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .answer-btn {
+            margin: 1.5rem;
+        }
+    }
+
+    @media (min-width: 577px) /* Tablets */ {
+
+        margin-bottom: 5rem;
+
+        .question-heading {
+            margin: 1rem 2rem 0rem 2rem ;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .current-points-heading {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .current-question-heading {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (min-width: 971px) /* Desktop */ {
+
+        margin-bottom: 8rem;
+
+        .question-heading {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}

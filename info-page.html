@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script defer type="module" src="scripts/pages/info-page.js"></script>
+    <script defer src="scripts/components/Footer.js"></script>
+    <script defer src="scripts/components/LogOutBtn.js"></script>
+    <script defer src="scripts/animations/infoPageAnimations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <title>Fakta - Quizeria</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <log-out-btn-template></log-out-btn-template>
+            <h2 class="personalized-welcome-heading"><!-- Kode fra info-page.js --></h2>
+        </header>
+
+        <main>
+
+            <section class="filter-info-section">
+
+                <div class="filter-subject-btns-container">
+                    <button class="btn btn--purple music-btn">Musikk</button>
+                    <button class="btn btn--purple anime-btn">Anime</button>
+                </div>
+
+                <section class="music-filter-section">
+
+                    <section class="music-input-section">
+                        <label for="music-search-input">Søk</label>
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="music-search-input">
+                    </section>
+
+                    <section class="music-select-section">
+                        <label class="country-filter-input-label">Filtrer etter land</label>
+                        <select class="country-filter-input">
+                            <option>USA</option>
+                            <option>Sverige</option>
+                            <option>Alle</option>
+                        </select>
+                    </section>
+
+                </section>
+
+
+                <section class="anime-filter-section">
+
+                    <section class="anime-input-section">
+                        <label for="anime-search-input">Søk</label>
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="anime-search-input">
+                    </section>
+
+                    <section class="anime-select-section">
+                        <label class="main-character-filter-input-label">Filtrer etter person</label>
+                        <select class="main-character-filter-input">
+                            <option>Goku</option>
+                            <option>Naruto</option>
+                            <option>Saitama</option>
+                            <option>Alle</option>
+                        </select>
+                    </section>
+
+                </section>
+
+            </section>
+            
+            <div class="continue-to-quiz-btn-container">
+                <button class="btn btn--dark continue-to-quiz-btn">Gå videre til quizen</button>
+            </div>
+
+
+            <section class="music-info-grid-container">
+
+                <!-- Code from info-page.js -->
+
+            </section>
+
+
+            <section class="anime-info-grid-container">
+
+                <!-- Code from info-page.js -->
+                
+            </section>
+
+        </main>
+
+        <footer-template></footer-template>
+
+    </div>
+    
+</body>
+</html>

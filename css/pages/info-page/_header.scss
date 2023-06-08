@@ -1,0 +1,28 @@
+
+.header {
+
+    .personalized-welcome-heading {
+        margin-top: 2rem;
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    @media (min-width: 577px) /* Tablets */ {
+
+        .personalized-welcome-heading {
+            margin-top: 2rem;
+            font-size: 2.5rem;
+        }
+        
+    }
+
+    @media (min-width: 971px) /* Desktop */ {
+        
+        .personalized-welcome-heading {
+            margin-top: 3rem;
+            font-size: 3rem;
+            margin-left: 2rem;
+        }
+    }
+}

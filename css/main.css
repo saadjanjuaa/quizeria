@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+nav ol, nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #9BBDFF;
+}
+
+h2 {
+  font-size: 2.2rem;
+  opacity: 0;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 577px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 971px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.welcome-page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.welcome-page-wrapper .welcome-section__heading {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-size: 2.3rem;
+  opacity: 0;
+}
+.welcome-page-wrapper .welcome-section .btn-container {
+  display: flex;
+}
+.welcome-page-wrapper .welcome-section .btn-container .continue-btn {
+  margin: 1rem;
+  opacity: 0;
+}
+.welcome-page-wrapper .welcome-section .btn-container .start-new-btn {
+  margin: 1rem;
+  opacity: 0;
+}
+.welcome-page-wrapper .new-or-continue-section .start-new-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.welcome-page-wrapper .new-or-continue-section .start-new-section .name-input {
+  margin: 1rem 0rem 1rem 0rem;
+}
+.welcome-page-wrapper .new-or-continue-section .continue-section {
+  text-align: center;
+  margin-top: 1rem;
+}
+.welcome-page-wrapper .new-or-continue-section .continue-section__heading {
+  padding: 0.5rem;
+}
+.welcome-page-wrapper .new-or-continue-section .continue-section .existing-players-btn-container {
+  margin-top: 1rem;
+}
+.welcome-page-wrapper .new-or-continue-section .continue-section .continue-btn-container {
+  margin-top: 2rem;
+}
+@media (min-width: 577px) {
+  .welcome-page-wrapper__heading {
+    font-size: 3rem;
+    opacity: 0;
+  }
+}
+@media (min-width: 971px) {
+  .welcome-page-wrapper__heading {
+    font-size: 4rem;
+    opacity: 0;
+  }
+}
+
+.filter-info-section {
+  opacity: 0;
+}
+.filter-info-section .filter-subject-btns-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.filter-info-section .filter-subject-btns-container .anime-btn {
+  margin-left: 1rem;
+}
+.filter-info-section .music-filter-section .music-input-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  align-items: center;
+}
+.filter-info-section .music-filter-section .music-input-section .fa-search {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+  margin-right: 0.5rem;
+}
+.filter-info-section .music-filter-section .music-input-section .music-search-input {
+  width: 40vw;
+}
+.filter-info-section .music-filter-section .music-select-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-info-section .music-filter-section .music-select-section .country-filter-input-label {
+  margin-right: 0.5rem;
+}
+.filter-info-section .anime-filter-section {
+  display: none;
+}
+.filter-info-section .anime-filter-section .anime-input-section {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  align-items: center;
+}
+.filter-info-section .anime-filter-section .anime-input-section .fa-search {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+  margin-right: 0.5rem;
+}
+.filter-info-section .anime-filter-section .anime-input-section .anime-search-input {
+  width: 40vw;
+}
+.filter-info-section .anime-filter-section .anime-select-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-info-section .anime-filter-section .anime-select-section .main-character-filter-input-label {
+  margin-right: 0.5rem;
+}
+
+.continue-to-quiz-btn-container {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.music-info-grid-container {
+  margin-bottom: 5rem;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.music-info-grid-container .info-box {
+  background-color: #25282A;
+  border-radius: 2rem;
+  margin: 2rem;
+  grid-column: auto/span 12;
+}
+.music-info-grid-container .info-box__image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 9rem;
+  border-radius: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.music-info-grid-container .info-box__heading {
+  color: white;
+  margin: 1rem 0rem 0.5rem 1rem;
+  font-weight: 600;
+}
+.music-info-grid-container .info-box__text {
+  color: white;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+@media (min-width: 577px) {
+  .music-info-grid-container .info-box {
+    grid-column: auto/span 6;
+  }
+}
+@media (min-width: 971px) {
+  .music-info-grid-container .info-box {
+    grid-column: auto/span 4;
+  }
+}
+
+.anime-info-grid-container {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  display: none;
+  grid-template-columns: repeat(12, 1fr);
+}
+.anime-info-grid-container .info-box {
+  background-color: #25282A;
+  border-radius: 2rem;
+  margin: 2rem;
+  grid-column: auto/span 12;
+}
+.anime-info-grid-container .info-box__image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 9rem;
+  border-radius: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.anime-info-grid-container .info-box__heading {
+  color: white;
+  margin: 1rem 0rem 0.5rem 1rem;
+  font-weight: 600;
+}
+.anime-info-grid-container .info-box__text {
+  color: white;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+@media (min-width: 577px) {
+  .anime-info-grid-container .info-box {
+    grid-column: auto/span 6;
+  }
+}
+@media (min-width: 971px) {
+  .anime-info-grid-container .info-box {
+    grid-column: auto/span 4;
+  }
+}
+
+.header .personalized-welcome-heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 577px) {
+  .header .personalized-welcome-heading {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 971px) {
+  .header .personalized-welcome-heading {
+    margin-top: 3rem;
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+}
+
+.navigation-btns {
+  opacity: 0;
+  margin-top: 3rem;
+}
+.navigation-btns .change-subject-btns-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.navigation-btns .change-subject-btns-container .anime-btn {
+  margin-left: 2rem;
+}
+.navigation-btns .back-to-info-page-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.quiz-section {
+  opacity: 0;
+  margin-bottom: 5rem;
+}
+.quiz-section .question-heading {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.quiz-section .current-points-heading {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.quiz-section .current-question-heading {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.quiz-section .quiz-btns-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.quiz-section .quiz-btns-container .quit-btn {
+  display: none;
+}
+.quiz-section .answer-btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quiz-section .answer-btns-container .answer-btn {
+  margin: 1.5rem;
+}
+@media (min-width: 577px) {
+  .quiz-section {
+    margin-bottom: 5rem;
+  }
+  .quiz-section .question-heading {
+    margin: 1rem 2rem 0rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .quiz-section .current-points-heading {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .quiz-section .current-question-heading {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 971px) {
+  .quiz-section {
+    margin-bottom: 8rem;
+  }
+  .quiz-section .question-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.btn {
+  background-color: #F4C3CB;
+  border: none;
+  padding: 0.3rem 1.3rem;
+  border-radius: 2rem;
+  opacity: 1;
+}
+.btn--purple {
+  background-color: #5C34FA;
+  color: #FFFFFF;
+}
+.btn--dark {
+  background-color: #25282A;
+  color: #FFFFFF;
+}
+.btn:hover {
+  filter: brightness(85%);
+}
+@media (min-width: 971px) {
+  .btn {
+    padding: 0.5rem 2.1rem;
+    font-size: 1rem;
+  }
+}
+
+input {
+  border-radius: 2rem;
+  border: none;
+  padding: 0.2rem 0.5rem;
+}
+input:focus {
+  border: 1px solid #5C34FA;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script defer type="module" src="scripts/pages/quiz-page.js"></script>
+    <script defer src="scripts/components/Footer.js"></script>
+    <script defer src="scripts/components/LogOutBtn.js"></script>
+    <script defer src="scripts/animations/quizPageAnimations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <title>Quiz - Quizeria</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <log-out-btn-template></log-out-btn-template>
+
+            <section class="navigation-btns">
+                
+                <div class="change-subject-btns-container">
+                    <button class="btn btn--purple music-btn">Musikk</button>
+                    <button class="btn btn--purple anime-btn">Anime</button>
+                </div>
+
+
+                <div class="back-to-info-page-btn-container">
+                    <button class="btn btn--dark back-to-info-page-btn">Tilbake til info siden</button>
+                </div>
+
+            </section>
+            
+        </header>
+
+        <main>
+
+            <section class="quiz-section">
+
+
+                <h3 class="question-heading"><!-- Kode fra quiz-page.js  --></h3> 
+                <h4 class="current-points-heading"><!-- Kode fra quiz-page.js  --></h4>
+                <h4 class="current-question-heading"><!-- Kode fra quiz-page.js  --></h4>
+
+                <div class="quiz-btns-container">
+                    <button class="btn btn--purple next-question-btn">Videre</button>
+                    <button class="btn btn--dark quit-btn">Avslutt</button>
+                </div>
+
+                <div class="answer-btns-container">
+                    <!-- Kode fra quiz-page.js  -->
+                </div>
+
+                
+            </section>
+
+        </main>
+
+        <footer-template></footer-template>
+        
+    </div>
+
+</body>
+</html>

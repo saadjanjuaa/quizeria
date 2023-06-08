@@ -1,0 +1,57 @@
+@import "../../variables/colors";
+
+.music-info-grid-container {
+
+    margin-bottom: 5rem;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    .info-box {
+
+        background-color: $fourth;
+        border-radius: 2rem;
+        margin: 2rem;
+        grid-column: auto / span 12;
+    
+        &__image {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 9rem;
+            border-radius: 2rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__heading {
+            color: white;
+            margin: 1rem 0rem 0.5rem 1rem;
+            font-weight: 600;
+        }
+
+        &__text {
+            color: white;
+            margin-left: 1rem;
+            padding-bottom: 1rem;
+            font-weight: 200;
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+        }
+    }
+
+    @media (min-width: 577px) /* Tablets */ {
+
+        .info-box {
+            grid-column: auto / span 6; 
+        }
+    }
+
+    @media (min-width: 971px) /* Desktop */ {
+
+        .info-box {
+            grid-column: auto / span 4;
+        }
+    }
+}

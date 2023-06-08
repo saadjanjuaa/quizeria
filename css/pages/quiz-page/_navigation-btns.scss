@@ -1,0 +1,26 @@
+@import "../../variables/colors";
+
+.navigation-btns {
+
+    opacity: 0;
+    margin-top: 3rem;
+    
+    .change-subject-btns-container {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        .anime-btn {
+            margin-left: 2rem;
+        }
+    }
+
+    .back-to-info-page-btn-container {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+    }
+}

@@ -1,0 +1,83 @@
+@import "../../variables/colors";
+
+.filter-info-section {
+
+    opacity: 0;
+    
+    .filter-subject-btns-container {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        .anime-btn {
+            margin-left: 1rem;
+        }
+    }
+
+    .music-filter-section {
+
+        .music-input-section {
+
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+            align-items: center;
+    
+            .fa-search {
+                font-size: 0.9rem;
+                margin-left: 0.3rem;
+                margin-right: 0.5rem;
+            }
+
+            .music-search-input{
+                width: 40vw;
+            }
+        }
+    
+        .music-select-section {
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .country-filter-input-label {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    
+    .anime-filter-section {
+
+        display: none;
+
+        .anime-input-section {
+
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+            align-items: center;
+            
+            .fa-search {
+                font-size: 0.9rem;
+                margin-left: 0.3rem;
+                margin-right: 0.5rem;
+            }
+
+            .anime-search-input {
+                width: 40vw;
+            }
+        }
+
+        .anime-select-section {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .main-character-filter-input-label {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

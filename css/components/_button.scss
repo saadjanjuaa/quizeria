@@ -1,0 +1,31 @@
+@import "../variables/colors";
+
+.btn {
+
+    background-color: $secondary;
+    border: none;
+    padding: 0.3rem 1.3rem;
+    border-radius: 2rem;
+    opacity: 1;
+
+    &--purple {
+        background-color: $primary;
+        color: $third;
+    }
+    
+    &--dark {
+        background-color: $fourth;
+        color: $third;
+    }
+
+    &:hover {
+        filter: brightness(85%);
+    }
+
+    @media (min-width: 971px) /* Desktop */ {
+   
+        padding: 0.5rem 2.1rem;
+        font-size: 1rem;
+
+    }
+}
